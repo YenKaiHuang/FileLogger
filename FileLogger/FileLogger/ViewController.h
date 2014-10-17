@@ -7,12 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
+
 
 #import "DLog.h"
 
 
-@interface ViewController : UIViewController
 
+
+@interface ViewController : UIViewController<MFMailComposeViewControllerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIButton *sendLogBtn;
 
 @end
 
